@@ -6,7 +6,7 @@ public class Opgave5 {
      *
      *  OBS! Skriv hvad du har gjort som kommentar ud for hver linje du fixer
      */
-
+int smaller;                                            //vi initialiserer smaller i det globale scope
 
     void main() {
 
@@ -14,27 +14,27 @@ public class Opgave5 {
 
         minimum(a,b);
 
-        if {smaller == a} {
+        if (smaller == a) {                             //curly brackets i stedet for normale brackets
 
-            System.out.println("a is the smallest!");
+            System.out.println(a + " is the smallest!");   //printer ikke vores variabel
 
         }
 
     }
 
-    void minimum(int a, int b) {
+    int minimum(int a, int b) {               //en void metode kan ikke returnere en værdi
 
         if (a < b) {
 
-            int smaller = a;
+            smaller = a;
 
-        } else (a >= b) {
+        } else if (a >= b) {                   //else kan ikke have en condition uden if
 
-            int smaller = b;
+            smaller = b;
 
         }
 
-        return int smaller;
+        return smaller;                   //variablen skal ikke initialiseres hver gang, så ikke "int smaller"
 
     }
 }
